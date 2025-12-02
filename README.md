@@ -27,15 +27,6 @@ Aplikasi ini berinteraksi dengan satu tabel utama di database.
 
 | Kolom | Tipe Data | Keterangan |
 | :--- | :--- | :--- |
-| `kode_barang` | VARCHAR (PK) | Primary Key, kode unik barang. |
-| `nama_barang` | VARCHAR | Nama produk/barang. |
-| `stok` | INT | Jumlah stok yang tersedia saat ini. |
-| `harga_satuan` | DOUBLE | Harga beli atau harga jual satuan. |
-| `kategori` | VARCHAR | Kategori barang (misalnya: Elektronik, Pakaian, Makanan). |
-
-### ⚙️ Konfigurasi Database (MySQL)
-
-Pastikan Anda membuat database dengan nama yang sesuai sebelum menjalankan aplikasi:
-
-```sql
-CREATE DATABASE IF NOT EXISTS db_inventaris;
+| `id` | VARCHAR (PK) | Primary Key, kode unik barang. |
+| `nama` | VARCHAR | Nama produk/barang. |
+| `jumlah` | INT | Jumlah stok yang tersedia saat ini. |
